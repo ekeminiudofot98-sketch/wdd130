@@ -1,12 +1,24 @@
+/* Universal selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: Roboto, Arial, sans-serif;
+}
+
 nav a {
     color: white;
     padding: 10px;
     display: block;
-
 }
 
 nav {
-    background-color: steelblue
+    background-color: steelblue;
+    padding: 10px;
 }
 
 main {
@@ -16,18 +28,12 @@ main {
 
 aside {
     width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 0.2);
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
     text-align: center;
-
+    position: relative;
 }
 
 h1 {
     color: steelblue;
-
 }
 
 aside img {
@@ -41,11 +47,32 @@ main img {
     border: 1px solid steelblue;
     padding: 2px;
     box-shadow: 0 0 30px gray;
-
+    float: right;
+    margin: 0 0 1rem 1rem;
 }
 
 footer {
     margin-top: 15px;
     border-top: 1px solid #000;
     text-align: center;
+}
+
+/* Class Selectors */
+.box {
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 10%);
+    padding: 1rem;
+    background-color: #ddd;
+    color: #000;
+}
+
+aside h2 {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.indent {
+    margin-left: 1rem;
+
 }
